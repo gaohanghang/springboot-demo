@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    cn.itcast: debug
+    # org.springframework: debug
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yun6
+    username: root
+    password: root
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  # mapper-locations: mapper/*.xml
+  type-aliases-package: cn.itcast.pojo
